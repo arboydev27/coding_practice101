@@ -58,16 +58,16 @@ The MergeStringsAlternatively class merges two strings character by character, a
 
 Example:\
 Input: "abc" and "pqr"\
-Output: `[a, p, b, q, c, r]`
+Output: `apbqcr`
 
 Input: "ab" and "pqrs"\
-Output: `[a, p, b, q, r, s]`
+Output: `apbqrs`
 
 Input: "abcd" and "pq"\
-Output: `[a, p, b, q, c, d]`
+Output: `apbqcd`
 
 Implementation Notes:
-1. Uses an ArrayList<Character> to store the merged characters.
+1. Uses a StringBuilder to build a new String of the merged characters.
 2. Iterates up to the length of the longer string, adding characters alternately from each string.
 
 
