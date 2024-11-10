@@ -71,7 +71,7 @@ Implementation Notes:
 2. Iterates up to the length of the longer string, adding characters alternately from each string.
 
 ### 6. Greatest Common Divisor of Strings
-Description:
+Description:\
 The GreatestCommonDivisorOfStrings class finds the largest common divisor string that can be repeatedly concatenated to form two input strings. If no such string exists, it returns an empty string. This problem is an application of the Greatest Common Divisor (GCD) concept, applied to string patterns rather than numbers.
 
 Example:\
