@@ -52,7 +52,7 @@ Implementation Notes:
 2. It finds the indices of the smallest and largest values in the array and swaps them.
 3. The program displays the modified array with the minimum and maximum values swapped.
 
-### 4. Merge Strings Alternatively
+### 5. Merge Strings Alternatively
 Description:
 The MergeStringsAlternatively class merges two strings character by character, alternating between them. If one string is longer, the remaining characters of the longer string are appended at the end. This function is useful for combining two words or phrases in an interleaved manner, which has applications in data visualization, cryptography, and stylized text formatting.
 
