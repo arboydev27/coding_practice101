@@ -39,5 +39,18 @@ Implementation Notes:
 1. Reverses the string manually by iterating from the end to the beginning.
 2. Logs the original and reversed string, with error logging for invalid inputs.
 
+### 4. Swap Max and Min Elements
+Description:
+The SwapMaxMin program takes an array of integers from the user, identifies the smallest and largest elements, and swaps their positions in the array. This is useful for array manipulation tasks where specific values need to be reorganized for sorting, normalization, or other data processing purposes.
+
+Example:
+Input: Array `1 2 3 4 5`
+Output: `The new swapped array is {5, 2, 3, 4, 1}`
+
+Implementation Notes:
+1. The program prompts the user to enter 5 integers to populate the array.
+2. It finds the indices of the smallest and largest values in the array and swaps them.
+3. The program displays the modified array with the minimum and maximum values swapped.
+
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
