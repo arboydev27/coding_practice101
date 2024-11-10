@@ -7,7 +7,7 @@ This repository contains solutions to various coding problems that are often enc
 Description:
 The AlternatingCapitalization class modifies a string to alternate between uppercase and lowercase characters, starting with uppercase. It handles only non-spaced alphanumeric inputs. Invalid inputs (e.g., null, empty strings, or non-alphanumeric characters) raise a custom AlternatingCapitalizationException.
 
-Example:
+Example:\
 Input: "hello"\
 Output: `HeLlO`
 
@@ -19,7 +19,7 @@ Implementation Notes:
 Description:
 The PalindromeChecker class determines if a string is a palindrome, ignoring case, spaces, and punctuation. It raises a PalindromeException for null or empty strings, ensuring that input errors are handled effectively.
 
-Example:
+Example:\
 Input: "A man, a plan, a canal, Panama"\
 Output: `True`
 
@@ -31,8 +31,8 @@ Implementation Notes:
 Description:
 The TextReversal class reverses a given string and returns the reversed version. Invalid inputs (null or empty strings) are handled by a custom TextReversalException.
 
-Example:
-Input: "hello"
+Example:\
+Input: "hello"\
 Output: `olleh`
 
 Implementation Notes:
@@ -43,7 +43,7 @@ Implementation Notes:
 Description:
 The SwapMaxMin program takes an array of integers from the user, identifies the smallest and largest elements, and swaps their positions in the array. This is useful for array manipulation tasks where specific values need to be reorganized for sorting, normalization, or other data processing purposes.
 
-Example:
+Example:\
 Input: Array `1 2 3 4 5`\
 Output: `The new swapped array is [5, 2, 3, 4, 1]`
 
@@ -56,7 +56,7 @@ Implementation Notes:
 Description:
 The MergeStringsAlternatively class merges two strings character by character, alternating between them. If one string is longer, the remaining characters of the longer string are appended at the end. This function is useful for combining two words or phrases in an interleaved manner, which has applications in data visualization, cryptography, and stylized text formatting.
 
-Example:
+Example:\
 Input: "abc" and "pqr"\
 Output: `[a, p, b, q, c, r]`
 
