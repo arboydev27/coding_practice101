@@ -88,6 +88,37 @@ Implementation Notes:
 1. First checks if concatenating str1 + str2 equals str2 + str1 to verify if they share a common divisor string.
 2. Uses a helper function gcd(int a, int b) to find the GCD of the string lengths, then returns the substring from str1 of this length.
 
+### 7. String Has Unique Characters v1.0
+Description:\
+The StringHasUniqueCharactersV1 class checks whether all characters in a given string are unique. It iterates through the string, comparing each character with every other character to identify duplicates. This function is helpful for problems involving uniqueness constraints, such as password validation or ensuring non-repeating elements in a dataset.
+
+Example:\
+Input: "word"\
+Output: `The string 'word' has unique characters`
+
+Input: "week"\
+Output: `The string 'week' has duplicate characters`
+
+Implementation Notes:
+1. Uses nested loops to compare each character with every other character.
+2. Returns false immediately upon finding any duplicate characters; otherwise, returns true.
+
+### 8. String Has Unique Characters v2.0 (Optimized Version)
+Description:\
+The StringHasUniqueCharactersV2 class checks for unique characters in a given string using an optimized approach with a boolean array to track ASCII characters. This approach allows for quick lookups and reduces the time complexity to O(n), making it highly efficient for strings of moderate length.
+
+Example:\
+Input: "word"\
+Output: `The string 'word' has unique characters`
+
+Input: "week"\
+Output: `The string 'week' has duplicate characters`
+
+Implementation Notes:
+1. Utilizes a boolean array of size 128, representing ASCII characters.
+2. If a string is longer than 128 characters, it immediately returns false, as duplicate characters are guaranteed.
+3. Each character’s ASCII value serves as an index, marking it as “found” to detect duplicates in constant time.
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
