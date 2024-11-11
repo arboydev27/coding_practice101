@@ -119,6 +119,22 @@ Implementation Notes:
 2. If a string is longer than 128 characters, it immediately returns false, as duplicate characters are guaranteed.
 3. Each character’s ASCII value serves as an index, marking it as “found” to detect duplicates in constant time.
 
+### 9. Check Permutations
+Description:\
+The CheckPermutation class determines if two strings are permutations of each other, meaning they contain the same characters in the same quantity, but possibly in a different order. This function is helpful in scenarios where you need to verify if one string can be rearranged to form another.
+
+Example:\
+Input: "word" and "drow"\
+Output: `The strings 'word' and 'drow' are permutations of each other`
+
+Input: "week" and "weekk"\
+Output: `The strings 'week' and 'weekk' are not permutations of each other`
+
+Implementation Notes:
+1. Uses a helper method sort(String str) to sort characters in each string, making it easy to compare them.
+2. If the two sorted strings are equal, they are permutations; otherwise, they are not.
+3. Returns false immediately if the strings have different lengths, as they cannot be permutations in that case.
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
