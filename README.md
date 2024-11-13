@@ -148,6 +148,28 @@ Implementation Notes:
 2. Modifies the array from the end to the beginning, replacing spaces with "%20" in reverse to prevent overwriting characters.
 3. Ends the array with a null character (\0) to mark the end of the modified string.
 
+### 11. Kids With the Greatest Number of Candies
+Description:\
+The `KidsCandies` class determines if each child in a group can have the greatest number of candies by adding a given number of extraCandies to their current count.\
+Basically, There are `n` kids with candies. You are given an integer array `candies`, where each `candies[i]` represents the number of candies the `ith` kid has, and an integer `extraCandies`, denoting the number of extra candies that you have.\
+Return a boolean array `result` of length `n`, where `result[i]` is `true` if, after giving the `ith` kid all the `extraCandies`, they will have the greatest number of candies among all the kids, or `false` otherwise.\
+Note that multiple kids can have the greatest number of candies.
+
+Example:\
+Input: candies = `[2,3,5,1,3]`, extraCandies = `3`\
+Output: `[true, true, true, false, true]`
+
+Input: candies = `[4,2,1,1,2]`, extraCandies = `1`\
+Output: `[true, false, false, false, false]`
+
+Input: candies = `[12,1,12]`, extraCandies = `10`\
+Output: `[true, false, true]`
+
+Implementation Notes:
+1. Finds the maximum number of candies currently held by any child.
+2. Adds extraCandies to each child’s current candy count and checks if it meets or exceeds the maximum count.
+3. Returns a list of booleans representing whether each child can have the most candies.
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
