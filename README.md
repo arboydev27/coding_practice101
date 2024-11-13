@@ -135,6 +135,19 @@ Implementation Notes:
 2. If the two sorted strings are equal, they are permutations; otherwise, they are not.
 3. Returns false immediately if the strings have different lengths, as they cannot be permutations in that case.
 
+### 10. Replace String Spaces
+Description:\
+The ReplaceStringSpaces class replaces all spaces in a string with "%20", similar to URL encoding. Given the "true" length of the string (i.e., excluding any trailing spaces), it performs this operation in place using a character array, modifying it to replace spaces without using additional space for a new string.
+
+Example:\
+Input: "Mr John Smith  " (with true length 13)\
+Output: `Mr%20John%20Smith`
+
+Implementation Notes:
+1. First, counts the spaces within the "true" length to determine the expanded length of the array.
+2. Modifies the array from the end to the beginning, replacing spaces with "%20" in reverse to prevent overwriting characters.
+3. Ends the array with a null character (\0) to mark the end of the modified string.
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
