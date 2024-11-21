@@ -196,13 +196,13 @@ Description:\
 The ReverseWordsInAString class reverses the order of words in a given string while removing unnecessary spaces. Words are defined as sequences of non-space characters separated by one or more spaces. The result contains words in reverse order, separated by a single space, with no leading or trailing spaces.
 
 Example:\
-Input: `the sky is blue`\
+Input: `"the sky is blue"`\
 Output: `blue is sky the"`
 
-Input: ` hello world `\
+Input: `" hello world "`\
 Output: `world hello`
 
-Input: `a good example`\
+Input: `"a good   example"`\
 Output: `example good a`
 
 Implementation Notes:
