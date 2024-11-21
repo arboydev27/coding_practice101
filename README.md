@@ -170,6 +170,27 @@ Implementation Notes:
 2. Adds extraCandies to each child’s current candy count and checks if it meets or exceeds the maximum count.
 3. Returns a list of booleans representing whether each child can have the most candies.
 
+### 12. Can Plant Flowers
+Description:\
+The CanPlantFlowers class checks if a given number of flowers (n) can be planted in a flowerbed without violating the rule that no two flowers can be adjacent. The flowerbed is represented as an array, where 1 indicates a flower is already planted, and 0 indicates an empty plot.
+
+Example:\
+Input: `flowerbed = [1, 0, 0, 0, 1], n = 1`\
+Output: `true`\
+Explanation: A flower can be planted at the middle plot without violating the rule.
+
+Input: flowerbed = `[1, 0, 0, 0, 1], n = 2`\
+Output: `false`\
+Explanation: Only one flower can be planted without violating the rule.
+
+Input: flowerbed = `[0, 0, 1, 0, 0], n = 2`\
+Output: `true`
+
+Implementation Notes:
+1. Iterates through the flowerbed array, checking for empty plots (0).
+2. Ensures that the previous (prev) and next (next) plots are also empty before planting a flower.
+3. Counts the number of flowers successfully planted and returns true if the count is at least n, otherwise false.
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
