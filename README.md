@@ -191,6 +191,25 @@ Implementation Notes:
 2. Ensures that the previous (prev) and next (next) plots are also empty before planting a flower.
 3. Counts the number of flowers successfully planted and returns true if the count is at least n, otherwise false.
 
+### 13. Reverse Words in a String
+Description:\
+The ReverseWordsInAString class reverses the order of words in a given string while removing unnecessary spaces. Words are defined as sequences of non-space characters separated by one or more spaces. The result contains words in reverse order, separated by a single space, with no leading or trailing spaces.
+
+Example:\
+Input: `the sky is blue`\
+Output: `blue is sky the"`
+
+Input: ` hello world `\
+Output: `world hello`
+
+Input: `a good example`\
+Output: `example good a`
+
+Implementation Notes:
+1. Trims the input string to remove leading and trailing spaces and splits it into words using split("\\s+"), which handles multiple spaces.
+2. Reverses the array of words using a two-pointer approach.
+3. Joins the reversed words into a single string with String.join(" ", words).
+
 
 ### **How to Use**
 To explore these functions, each class file includes a main method with sample test cases. Clone this repository, compile the Java files, and run the tests or modify the inputs for additional practice.
